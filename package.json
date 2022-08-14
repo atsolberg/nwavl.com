@@ -84,7 +84,7 @@
       "publicUrl": "/frontend"
     },
     "backend": {
-      "source": "server/index.js",
+      "source": "server/index.mjs",
       "optimize": false,
       "context": "node",
       "engines": {
