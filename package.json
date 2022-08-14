@@ -1,0 +1,100 @@
+{
+  "name": "nwavl.com",
+  "version": "1.0.0",
+  "description": "Living Word Northwest AVL Team Website",
+  "main": "server/index.js",
+  "scripts": {
+    "build": "parcel build",
+    "dev": "parcel src/index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx}\"",
+    "lint": "eslint src --quiet",
+    "start": "node server/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage && open ./coverage/lcov-report/index.html",
+    "deploy": "git push heroku main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atsolberg/nwavl.com.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atsolberg/nwavl.com/issues"
+  },
+  "homepage": "https://github.com/atsolberg/nwavl.com#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@emotion/babel-plugin": "^11.7.2",
+    "@tailwindcss/forms": "^0.5.0",
+    "@testing-library/dom": "^8.17.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^14.4.3",
+    "autoprefixer": "^10.4.2",
+    "babel-jest": "^28.1.3",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.3",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^27.5.1",
+    "jest-fetch-mock": "^3.0.3",
+    "parcel": "^2.3.2",
+    "path-browserify": "^1.0.1",
+    "postcss": "^8.4.8",
+    "prettier": "^2.5.1",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
+    "axios": "^0.26.1",
+    "babel-plugin-add-react-displayname": "^0.0.5",
+    "classnames": "^2.3.1",
+    "cors": "^2.8.5",
+    "downshift": "^6.1.7",
+    "express": "^4.17.3",
+    "js-cookie": "^3.0.1",
+    "morgan": "^1.10.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
+    "showdown": "^2.0.3"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "targets": {
+    "frontend": {
+      "source": [
+        "src/index.html"
+      ],
+      "publicUrl": "/frontend"
+    },
+    "backend": {
+      "source": "server/index.js",
+      "optimize": false,
+      "context": "node",
+      "engines": {
+        "node": ">=16"
+      }
+    }
+  },
+  "jest": {
+    "automock": false,
+    "setupFilesAfterEnv": [
+      "./jest-setup.js"
+    ]
+  }
+}
