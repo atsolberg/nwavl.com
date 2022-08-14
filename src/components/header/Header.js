@@ -1,5 +1,8 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import cx from "classnames";
+
+import q from "../../util/element";
 
 import Sun from "../icons/Sun";
 import Moon from "../icons/Moon";
@@ -48,7 +51,7 @@ function Header() {
         <div className="py-3">
           <div className="relative flex items-center">
             <Link to="/" className="">
-              NW AVL
+              📺 NW AVL
             </Link>
 
             <div className="relative flex items-center ml-auto">
@@ -57,16 +60,21 @@ function Header() {
                   {/* Nav Links */}
                   <ul className="flex space-x-8 items-center">
                     <li>
-                      <Link className="hover:text-sky-500" to="/troubleshooting">
+                      <Link className="hover:text-sky-500" to="/">
+                        Checklist
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="hover:text-sky-500"
+                        to="/troubleshooting"
+                      >
                         Troubleshooting
                       </Link>
                     </li>
                   </ul>
                 </nav>
-
-                <Divider />
               </div>
-
 
               <Divider />
 

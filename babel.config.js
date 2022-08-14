@@ -1,11 +1,6 @@
 const base_config = {
-  presets: [
-    [
-      "@babel/preset-react",
-      { runtime: "automatic", importSource: "@emotion/react" },
-    ],
-  ],
-  plugins: ["@emotion/babel-plugin", "add-react-displayname"],
+  presets: [["@babel/preset-react"]],
+  plugins: ["add-react-displayname"],
 };
 
 module.exports = (api) => {
@@ -15,10 +10,7 @@ module.exports = (api) => {
       ...base_config,
       presets: [
         ["@babel/preset-env", { targets: { node: "16" } }],
-        [
-          "@babel/preset-react",
-          { runtime: "automatic", importSource: "@emotion/react" },
-        ],
+        ["@babel/preset-react"],
       ],
     };
   }

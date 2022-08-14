@@ -32,7 +32,7 @@
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
-    "@emotion/babel-plugin": "^11.7.2",
+    "@parcel/transformer-mdx": "^2.7.0",
     "@tailwindcss/forms": "^0.5.0",
     "@testing-library/dom": "^8.17.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -56,9 +56,9 @@
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {
-    "@emotion/react": "^11.8.2",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
+    "@mdx-js/react": "^1.6.22",
     "axios": "^0.26.1",
     "babel-plugin-add-react-displayname": "^0.0.5",
     "classnames": "^2.3.1",
