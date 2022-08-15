@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cx from "classnames";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 import q from "../../util/element";
 
@@ -55,6 +57,7 @@ function Header() {
             </Link>
 
             <div className="relative flex items-center ml-auto">
+              {/* Desktop Nav */}
               <div className="hidden md:contents">
                 <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                   {/* Nav Links */}
@@ -75,7 +78,33 @@ function Header() {
                   </ul>
                 </nav>
               </div>
-
+              {/* Mobile Nav */}
+              <div className="contents md:hidden">
+                <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
+                  {/* Nav Links */}
+                  <ul className="flex space-x-8 items-center">
+                    <li>
+                      <Link className="text-sky-500 hover:text-sky-500" to="/">
+                        <FontAwesomeIcon
+                          className="h-[1.3em] mb-[-3px]"
+                          icon={solid("clipboard")}
+                        />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="text-sky-500 hover:text-sky-500"
+                        to="/troubleshooting"
+                      >
+                        <FontAwesomeIcon
+                          className="h-[1.3em] mb-[-3px]"
+                          icon={solid("circle-question")}
+                        />
+                      </Link>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
               <Divider />
 
               {/* Theme Toggle */}

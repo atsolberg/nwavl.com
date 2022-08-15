@@ -1,6 +1,6 @@
 const base_config = {
-  presets: [["@babel/preset-react"]],
-  plugins: ["add-react-displayname"],
+  presets: ["@babel/preset-react"],
+  plugins: ["macros", "add-react-displayname"],
 };
 
 module.exports = (api) => {
