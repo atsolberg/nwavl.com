@@ -1,6 +1,6 @@
 import React from "react";
 import cx from "classnames";
-import Checklist from "../md/pre-service-checklist.mdx";
+import PreserviceChecklist from "../components/preservice-checklist/PreserviceChecklist";
 
 function Home() {
   return (
@@ -16,7 +16,7 @@ function Home() {
       >
         Pre-Service Checklist
       </h1>
-      <Checklist />
+      <PreserviceChecklist />
     </div>
   );
 }

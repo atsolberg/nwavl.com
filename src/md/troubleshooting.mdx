@@ -6,12 +6,15 @@ Edit the `Atem` -> properties, switch the `Device` to something else, then back 
 <Heading as="h3" size="md">Stream Deck not working?</Heading>
 Make sure the stream deck app is not running, start the companion app, click the icon by the clock and 'Launch GUI', from the 'Surfaces' tab click 'Rescan USB', if it still thinks Stream Deck app is running, open Task Manager, find the Stream Deck instance, kill it with fire, Rescan
 
+<Heading as="h3" size="md">No Audio in Stream PC OBS</Heading>
+Double-click the "FOH" source, make sure the device is set to "DVS Receive 1-2 (Dante Virtual Soundcard)"
+
 <Heading as="h3" size="md">No Audio on the 'NDI' channel in ATEM?</Heading>
 Make sure the PC audio device is set to Black Magic, then in ATEM, edit the FOH audio setting, set the monitoring to 'off', then back to 'Monitor and Output'
 
 <Heading as="h3" size="md">Outputs on ProPresenter Switched or not working?</Heading>
 
 - Make sure the lights on the back of the decimators are orange (not red), reset cables if red.
-- In Apple's display settings - Make sure that the retina dispaly is set to 'Main Display', and decimators are set to 'Extend'.
-- Make sure the displays (Audiance and Stage) are both enabled in Pro-Presenter (2 green lights top right in ProPresenter)
+- In Apple's display settings - Make sure that the retina display is set to 'Main Display', and decimators are set to 'Extend'.
+- Make sure the displays (Audience and Stage) are both enabled in Pro-Presenter (2 green lights top right in ProPresenter)
 - In ProPresenter > Configure Displays > make sure Screen #1 is Decimator, Screen #2 is NDI
