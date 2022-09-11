@@ -33,7 +33,7 @@ function PreserviceChecklist() {
                 <b>920175thAvenueNorth</b>
               </li>
               <li>
-                Description
+                Description -{" "}
                 <A
                   target="_blank"
                   href="https://www.dropbox.com/home/Northwest%20Services/Main/Stream%20Info"
@@ -43,7 +43,7 @@ function PreserviceChecklist() {
               </li>
 
               <li>
-                Thumbnail
+                Thumbnail -{" "}
                 <A
                   target="_blank"
                   href="https://www.dropbox.com/home/Northwest%20Services/Main/2022"
@@ -79,7 +79,9 @@ function PreserviceChecklist() {
             Make sure pre-service audio is running instead of live feed
           </ChecklistItem>
           <ChecklistItem>Set StreamDeck program to 'Pro'</ChecklistItem>
-          <ChecklistItem>'Go Live' from the YouTube Studio</ChecklistItem>
+          <ChecklistItem>
+            Open 'Go Live' page from the YouTube Studio
+          </ChecklistItem>
           <ChecklistItem>Start recording in OBS</ChecklistItem>
           <ChecklistItem>Start stream in OBS</ChecklistItem>
           <ChecklistItem>Check stream audio on YouTube phone app</ChecklistItem>
