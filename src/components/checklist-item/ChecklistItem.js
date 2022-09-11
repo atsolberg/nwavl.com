@@ -1,14 +1,18 @@
 import React from "react";
+import useHtmlId from "../../hooks/useHtmlId";
 
-function ChecklistItem({ children, ...rest }) {
+function ChecklistItem({ children, id: propId, ...rest }) {
+  const id = useHtmlId(propId);
   return (
-    <li>
-      <label className="flex" {...rest}>
+    <li id={id} {...rest}>
+      <div className="flex">
         <span>
-          <input type="checkbox" />
+          <input id={`${id}-cb`} type="checkbox" />
         </span>
-        <span className="flex-grow ml-2">{children}</span>
-      </label>
+        <span className="flex-grow ml-2">
+          <label htmlFor={`${id}-cb`}>{children}</label>
+        </span>
+      </div>
     </li>
   );
 }
