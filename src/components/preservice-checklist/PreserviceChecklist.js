@@ -8,6 +8,10 @@ function PreserviceChecklist() {
   return (
     <section>
       <ul>
+        <ChecklistItem>
+          Do a speedtest.net check to make sure the UPLOAD is at least 4mbs or
+          better. If not, use a cellphone hotspot.
+        </ChecklistItem>
         <ChecklistItem>Pre-service audio works</ChecklistItem>
         <ChecklistItem>
           PC OBS has an audio level (FOH audio source is set to 'Output &
