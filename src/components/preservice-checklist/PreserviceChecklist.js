@@ -18,7 +18,11 @@ function PreserviceChecklist() {
           Monitor')
         </ChecklistItem>
         <ChecklistItem>
-          ATEM has an audio level on 'NDI' Channel, Only 'NDI' is ON
+          Atem has an audio level on the `FOH` channel when band is practicing
+        </ChecklistItem>
+        <ChecklistItem>
+          ATEM has an audio level on `NDI` Channel when preservice audio is
+          active
         </ChecklistItem>
         <ChecklistItem>Scriptures key works</ChecklistItem>
         <ChecklistItem>Words key works</ChecklistItem>
