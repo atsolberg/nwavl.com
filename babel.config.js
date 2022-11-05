@@ -1,5 +1,4 @@
 const base_config = {
-  presets: ["@babel/preset-react"],
   plugins: ["macros", "add-react-displayname"],
 };
 
