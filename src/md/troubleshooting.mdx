@@ -1,16 +1,16 @@
 import Heading from "../components/heading/Heading";
 
 <Heading as="h3" size="md">No video to obs from switcher?</Heading>
+
 Edit the `Atem` -> properties, switch the `Device` to something else, then back to `Blackmagic Design`
 
 <Heading as="h3" size="md">Stream Deck not working?</Heading>
+
 Make sure the stream deck app is not running, start the companion app, click the icon by the clock and 'Launch GUI', from the 'Surfaces' tab click 'Rescan USB', if it still thinks Stream Deck app is running, open Task Manager, find the Stream Deck instance, kill it with fire, Rescan
 
-<Heading as="h3" size="md">No Audio in Stream PC OBS</Heading>
-Double-click the "FOH" source, make sure the device is set to "DVS Receive 1-2 (Dante Virtual Soundcard)"
+<Heading as="h3" size="md">No Audio on the 'OldS' channel in ATEM?</Heading>
 
-<Heading as="h3" size="md">No Audio on the 'NDI' channel in ATEM?</Heading>
-Make sure the PC audio device is set to Black Magic, then in ATEM, edit the FOH audio setting, set the monitoring to 'off', then back to 'Monitor and Output'
+Make sure the PC audio device is set to Black Magic.
 
 <Heading as="h3" size="md">Outputs on ProPresenter Switched or not working?</Heading>
 
@@ -20,7 +20,15 @@ Make sure the PC audio device is set to Black Magic, then in ATEM, edit the FOH 
 - In ProPresenter > Configure Displays > make sure Screen #1 is Decimator, Screen #2 is NDI
 
 <Heading as="h3" size="md">'Pre-audio' button does nothing?</Heading>
+
 Make sure on the pc, a scene in OBS is highlighted, otherwise the 'cut' operation won't do anything.
 
-<Heading as="h3" size="md">Words/NDI is just orange?</Heading>
+<Heading as="h3" size="md">Words/NDI video not working? is just orange?</Heading>
+
 In OBS, right click on the `Program` feed, click `Fullscreen Window`, `Black Magic`
+Then make sure they the Pro-Presenter op has the right 'Look' set for the current slides.
+
+<Heading as="h3" size="md">Audio level in Atem and OBS but no audio in headphones?</Heading>
+
+Power cycle the new (top) switcher, sometimes it just needs to restart.
+
