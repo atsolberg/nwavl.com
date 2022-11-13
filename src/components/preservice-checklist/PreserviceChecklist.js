@@ -75,6 +75,7 @@ function PreserviceChecklist() {
             <br />
           </p>
         </ChecklistItem>
+        <ChecklistItem>Focus camera 3</ChecklistItem>
       </ul>
 
       <Heading as="h3" size="md">
