@@ -1,6 +1,5 @@
 import React from "react";
 
-import A from "../link/A";
 import ChecklistItem from "../checklist-item/ChecklistItem";
 import Heading from "../heading/Heading";
 
@@ -9,113 +8,96 @@ function PreserviceChecklist() {
     <section>
       <ul>
         <ChecklistItem>
-          Do a speedtest.net check to make sure the UPLOAD is at least 4mbs or
-          better. If not, use a cellphone hotspot.
-        </ChecklistItem>
-        <ChecklistItem>Pre-service audio works</ChecklistItem>
-        <ChecklistItem>
-          PC OBS has an audio level (FOH audio source is set to 'Output &
-          Monitor')
+          On the streaming pc, Start OBS, Streamdeck Companion, Atem, Daunte
+          Virtual Soundcard, Daunte Virtual Controller, and Chrome
+          (https://studio.resi.io/)
         </ChecklistItem>
         <ChecklistItem>
-          Atem has an audio level on the `FOH` channel when band is practicing
+          Turn on camera's 1, 2, and 3. (Get a tall person to turn on camera 2
+          and take the lens cap off)
         </ChecklistItem>
         <ChecklistItem>
-          ATEM has an audio level on `NDI` Channel when preservice audio is
-          active
-        </ChecklistItem>
-        <ChecklistItem>Scriptures key works</ChecklistItem>
-        <ChecklistItem>Words key works</ChecklistItem>
-        <ChecklistItem>
-          Make sure podcast backup audio stick is plugged in
+          Check Comms - Hit the "com ON" button on the Streamdeck and verify
+          with someone else that you can hear each other from the av room and
+          camera 1.
         </ChecklistItem>
         <ChecklistItem>
-          Edit YouTube stream title, description, thumbnail, get from{" "}
-          <A target="_blank" href="https://www.dropbox.com">
-            dropbox
-          </A>
-          <p>
-            <ul>
-              <li>
-                Dropbox login - <b>northwest@lwcc.org</b> //{" "}
-                <b>920175thAvenueNorth</b>
-              </li>
-              <li>
-                Description -{" "}
-                <A
-                  target="_blank"
-                  href="https://www.dropbox.com/home/Northwest%20Services/Main/Stream%20Info"
-                >
-                  Stream Info
-                </A>
-              </li>
-
-              <li>
-                Thumbnail -{" "}
-                <A
-                  target="_blank"
-                  href="https://www.dropbox.com/home/Northwest%20Services/Main/2022"
-                >
-                  2022
-                </A>{" "}
-                \ the current series folder \ "Message Graphics" folder
-              </li>
-              <li>
-                YouTube login - <b>northwest.lw@gmail.com</b> //{" "}
-                <b>NorthwestRogers18</b>
-              </li>
-              <li>- 'Go Live', edit stream settings</li>
-              <li>- Update the title</li>
-              <li>
-                - Update description: delete the upper service-specific part of
-                the description from last week, leave the general info
-              </li>
-              <li>- Update thumbnail</li>
-            </ul>
-            <br />
-          </p>
+          Check Camera's Look - In Atem, verify the camera feeds look good,
+          adjust settings as needed. (Check "Balance" temperature, sometimes
+          that gets jacked up)
         </ChecklistItem>
-        <ChecklistItem>Focus camera 3</ChecklistItem>
+        <ChecklistItem>
+          Pre-service Audio Works - Hit the "pre audio" Pre-service button on
+          the streamdeck and verify you hear the music in the headphones.
+        </ChecklistItem>
+        <ChecklistItem>
+          Service Audio Works - Hit the "start" button on the Streamdeck and
+          verify you hear the band practicing. The "start" button does a couple
+          things: the pre-service audio channel on the Streamdeck should get
+          moved down, the audio feed from the room should get moved up, and the
+          video feed should get faded to camera 2.
+        </ChecklistItem>
+        <ChecklistItem>
+          Scriptures Key Works - Have the pro op put a scripture up and then hit
+          the "Scripture" button on the stream deck, verify that the scripture
+          is looking good on the lower third of the video feed.
+        </ChecklistItem>
+        <ChecklistItem>
+          Words Key Works - Have the pro op put a song slide up and then hit the
+          "Words" button on the stream deck, verify that the slide's words
+          appear on the video feed.
+        </ChecklistItem>
+        <ChecklistItem>
+          Make sure podcast backup audio stick is plugged into the sound board
+        </ChecklistItem>
       </ul>
 
       <Heading as="h3" size="md">
-        At 10:25
+        At 10:15
       </Heading>
       <p>
         <ul>
-          <ChecklistItem>Check camera/director comms</ChecklistItem>
           <ChecklistItem>
             Make sure pre-service audio is running instead of live feed
           </ChecklistItem>
           <ChecklistItem>Set StreamDeck program to 'Pro'</ChecklistItem>
-          <ChecklistItem>
-            Open 'Go Live' page from the YouTube Studio
-          </ChecklistItem>
-          <ChecklistItem>Start recording in OBS</ChecklistItem>
-          <ChecklistItem>Start stream in OBS</ChecklistItem>
-          <ChecklistItem>Check stream audio on YouTube phone app</ChecklistItem>
         </ul>
       </p>
 
       <Heading as="h3" size="md">
-        At 10:30
+        At 10:20 - Resi should be streaming
       </Heading>
-
       <p>
         <ul>
-          <ChecklistItem>Take out pre-service audio</ChecklistItem>
-          <ChecklistItem>Fade to Camera from Pro</ChecklistItem>
-          <ChecklistItem>Key in Words</ChecklistItem>
+          <ChecklistItem>
+            Open 'Go Live' page from the YouTube Studio, click the schedule tab,
+            click the live stream for today.
+          </ChecklistItem>
+          <ChecklistItem>Check stream audio on youtube</ChecklistItem>
+          <ChecklistItem>Check stream audio on facebook</ChecklistItem>
         </ul>
       </p>
 
       <Heading as="h3" size="md">
         After Praise and Worship
       </Heading>
-
       <p>
         <ul>
           <ChecklistItem>Take out Words Key</ChecklistItem>
+        </ul>
+      </p>
+
+      <Heading as="h3" size="md">
+        After Service
+      </Heading>
+      <p>
+        <ul>
+          <ChecklistItem>
+            Get audio file from soundboard for podcast
+          </ChecklistItem>
+          <ChecklistItem>Turn off monitors in av room</ChecklistItem>
+          <ChecklistItem>Turn off cameras, and put lens caps on</ChecklistItem>
+          <ChecklistItem>Turn off front screens and DSM</ChecklistItem>
         </ul>
       </p>
     </section>
