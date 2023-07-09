@@ -2,19 +2,19 @@ import React from "react";
 
 import ChecklistItem from "../checklist-item/ChecklistItem";
 import Heading from "../heading/Heading";
+import camera_2 from "../../images/camera_2.jpeg";
 
 function PreserviceChecklist() {
   return (
     <section>
       <ul>
         <ChecklistItem>
-          On the streaming pc, Start OBS, Streamdeck Companion, Atem, Daunte
-          Virtual Soundcard, Daunte Virtual Controller, and Chrome
+          On the streaming pc, Start OBS, Streamdeck Companion, Atem, and Chrome
           (https://studio.resi.io/)
         </ChecklistItem>
         <ChecklistItem>
-          Turn on camera's 1, 2, and 3. (Get a tall person to turn on camera 2
-          and take the lens cap off)
+          Turn on camera's 1, 2, and 3.
+          <img alt="" src={camera_2} className="w-[200px]" />
         </ChecklistItem>
         <ChecklistItem>
           Check Comms - Hit the "com ON" button on the Streamdeck and verify
@@ -24,7 +24,7 @@ function PreserviceChecklist() {
         <ChecklistItem>
           Check Camera's Look - In Atem, verify the camera feeds look good,
           adjust settings as needed. (Check "Balance" temperature, sometimes
-          that gets jacked up)
+          that gets jacked up, normal temp is 3200k)
         </ChecklistItem>
         <ChecklistItem>
           Pre-service Audio Works - Hit the "pre audio" Pre-service button on
@@ -34,7 +34,7 @@ function PreserviceChecklist() {
           Service Audio Works - Hit the "start" button on the Streamdeck and
           verify you hear the band practicing. The "start" button does a couple
           things: the pre-service audio channel on the Streamdeck should get
-          moved down, the audio feed from the room should get moved up, and the
+          faded down, the audio feed from the room should get faded up, and the
           video feed should get faded to camera 2.
         </ChecklistItem>
         <ChecklistItem>
