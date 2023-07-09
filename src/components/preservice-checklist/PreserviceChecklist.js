@@ -4,6 +4,10 @@ import ChecklistItem from "../checklist-item/ChecklistItem";
 import Heading from "../heading/Heading";
 import camera_2 from "../../images/camera_2.jpeg";
 
+function Description(props) {
+  return <div className="bg-slate-700 rounded-sm p-2" {...props} />;
+}
+
 function PreserviceChecklist() {
   return (
     <section>
@@ -17,35 +21,53 @@ function PreserviceChecklist() {
           <img alt="" src={camera_2} className="w-[200px]" />
         </ChecklistItem>
         <ChecklistItem>
-          Check Comms - Hit the "com ON" button on the Streamdeck and verify
-          with someone else that you can hear each other from the av room and
-          camera 1.
+          Check Comms
+          <Description>
+            Hit the "com ON" button on the Streamdeck and verify with someone
+            else that you can hear each other from the av room and camera 1.
+          </Description>
         </ChecklistItem>
         <ChecklistItem>
-          Check Camera's Look - In Atem, verify the camera feeds look good,
-          adjust settings as needed. (Check "Balance" temperature, sometimes
-          that gets jacked up, normal temp is 3200k)
+          Reset Cameras (Hit the "Camera Reset" button on streamdeck)
+          <Description>
+            After turning off cameras the week before, when they are turned on,
+            they don't have the same settings anymore, and they values in Atem
+            won't match either. Hitting the reset button will set all the
+            cameras settings via Atem using a hand-built config file.
+          </Description>
         </ChecklistItem>
         <ChecklistItem>
-          Pre-service Audio Works - Hit the "pre audio" Pre-service button on
-          the streamdeck and verify you hear the music in the headphones.
+          Pre-service Audio Works{" "}
+          <Description>
+            Hit the "pre audio" Pre-service button on the streamdeck and verify
+            you hear the music in the headphones.
+          </Description>
         </ChecklistItem>
         <ChecklistItem>
-          Service Audio Works - Hit the "start" button on the Streamdeck and
-          verify you hear the band practicing. The "start" button does a couple
-          things: the pre-service audio channel on the Streamdeck should get
-          faded down, the audio feed from the room should get faded up, and the
-          video feed should get faded to camera 2.
+          Service Audio Works
+          <Description>
+            Hit the "start" button on the Streamdeck and verify you hear the
+            band practicing. The "start" button does a couple things: the
+            pre-service audio channel on the Streamdeck should get faded down,
+            the audio feed from the room should get faded up, and the video feed
+            should get faded to camera 2.
+          </Description>
         </ChecklistItem>
         <ChecklistItem>
-          Scriptures Key Works - Have the pro op put a scripture up and then hit
-          the "Scripture" button on the stream deck, verify that the scripture
-          is looking good on the lower third of the video feed.
+          Scriptures Key Works
+          <Description>
+            Have the pro op put a scripture up and then hit the "Scripture"
+            button on the stream deck, verify that the scripture is looking good
+            on the lower third of the video feed.
+          </Description>
         </ChecklistItem>
         <ChecklistItem>
-          Words Key Works - Have the pro op put a song slide up and then hit the
-          "Words" button on the stream deck, verify that the slide's words
-          appear on the video feed.
+          Words Key Works
+          <Description>
+            Have the pro op put a song slide up and then hit the "Words" button
+            on the stream deck, verify that the slide's words appear on the
+            video feed.
+          </Description>
         </ChecklistItem>
         <ChecklistItem>
           Make sure podcast backup audio stick is plugged into the sound board
