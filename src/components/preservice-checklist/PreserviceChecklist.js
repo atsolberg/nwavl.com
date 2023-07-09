@@ -2,7 +2,7 @@ import React from "react";
 
 import ChecklistItem from "../checklist-item/ChecklistItem";
 import Heading from "../heading/Heading";
-import camera_2 from "../../images/camera_2.jpeg";
+import camera_2 from "../../images/camera_2.jpg";
 
 function Description(props) {
   return <div className="bg-slate-700 rounded-sm p-2" {...props} />;
