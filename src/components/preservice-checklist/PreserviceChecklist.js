@@ -2,6 +2,7 @@ import React from "react";
 
 import ChecklistItem from "../checklist-item/ChecklistItem";
 import Heading from "../heading/Heading";
+import ExpandableImage from "../expandable-image/ExpandableImage";
 import camera_2 from "../../images/camera_2.jpg";
 
 function Description(props) {
@@ -18,7 +19,7 @@ function PreserviceChecklist() {
         </ChecklistItem>
         <ChecklistItem>
           Turn on camera's 1, 2, and 3.
-          <img alt="" src={camera_2} className="w-[200px]" />
+          <ExpandableImage src={camera_2} alt="" className="mt-1" />
         </ChecklistItem>
         <ChecklistItem>
           Check Comms
