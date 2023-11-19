@@ -4,6 +4,25 @@ import ExpandableImage from "../components/expandable-image/ExpandableImage";
 import ableton_config from "../images/ableton_configuration.jpeg";
 
 <Heading as="h3" size="md">
+  No words on DSM?
+</Heading>
+You can change the output from the switcher in Atem. In the 'Outputs' menu, change
+the 'DSM' output to point to 'Room' instead of 'DSM'. That way the band will see
+the same thing as the audience.
+
+This usually happens when we forget to add a 'stage' action to the slides in the song.
+Don't forget to fix the stage action on that song after service so it doesn't happen again
+and set the 'DSM' output back to 'DSM'
+
+#### to fix the song:
+
+1. Highlight all the slides in the song except for the copyright slide
+2. Right click any of them.
+3. Click 'Add action', then 'Stage'
+   If there is already a stage action, you may have to remove it first.
+4. You'll see a dropdown for actions, choose 'DSM'
+
+<Heading as="h3" size="md">
   No video to obs from switcher?
 </Heading>
 Edit the `Atem` -> properties, switch the `Device` to something else, then back to
