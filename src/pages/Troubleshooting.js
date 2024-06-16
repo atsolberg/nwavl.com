@@ -1,6 +1,6 @@
 import React from "react";
 
-import Troubleshooting from "../md/troubleshooting.mdx";
+import TroubleshootingInfo from "../components/troubleshooting-info/TroubleshootingInfo.js";
 import Heading from "../components/heading/Heading";
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
       <Heading as="h1" size="xl">
         Trouble-Shooting
       </Heading>
-      <Troubleshooting />
+      <TroubleshootingInfo />
     </div>
   );
 }
